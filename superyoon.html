@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER YOON</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 48px;">SUPER YOON</h1>
+        <button class="button" onclick="showImage()">Click Me</button>
+        <p class="message">THE SITE IS MEANT FOR TRUE Gs ONLY.</p>
+        <img id="superImage" src="" style="display: none; max-width: 100%; height: auto;">
+    </div>
+
+    <script>
+        function showImage() {
+            var imageElement = document.getElementById("superImage");
+            // Replace 'file:///path/to/your/image.jpg' with the path to your image file
+            imageElement.src = "file:///c:/Users/yoons/OneDrive/Pictures/KakaoTalk_20240412_014801027.jpg";
+            imageElement.style.display = "block";
+        }
+    </script>
+</body>
+</html>
